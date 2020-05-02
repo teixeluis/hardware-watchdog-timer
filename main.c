@@ -23,21 +23,21 @@
  * The diagram below shows the pin mappings of the microntroller to this concrete
  * application:
  *
- *                       +---------------+
- *     +5V         -   --|(VDD)|   |(VSS)|--   - GND
- *                       |     \---/     |
- *     N/A         -   --|(GP5)     (AN0)|--   - N/A
- *                       |               |
- *     N/A         -   --|(GP4)     (GP1)|--   - N/A
- *                       |               |
- *     PWR_BTN     <   --|(GP3)     (GP2)|--   < WDT_RESET
- *                       +---------------+
+ *                     +---------------+
+ *   +5V         -   --|(VDD)|   |(VSS)|--   - GND
+ *                     |     \---/     |
+ *   N/A         -   --|(GP5)     (AN0)|--   - N/A
+ *                     |               |
+ *   N/A         -   --|(GP4)     (GP1)|--   > PWR_BTN
+ *                     |               |
+ *   N/A         -   --|(GP3)     (GP2)|--   < WDT_RESET
+ *                     +---------------+
  *
  * Author: Luis Teixeira (teixeluis@gmail.com)
  * 
  * Licence and copyright notice:
  *
- * Copyright 2014 Luis Teixeira
+ * Copyright 2020 Luis Teixeira
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

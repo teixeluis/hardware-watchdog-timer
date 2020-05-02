@@ -28,7 +28,7 @@ period, e.g. every 30 seconds.
 
 If for any reason the target device (Android phone) is completely irresponsive, 
 the assumption is that it will not be able to respond with the pulse. Once the
-WDT timer expires, the microcontroller will set the GP3 pin high for enough
+WDT timer expires, the microcontroller will set the GP1 pin high for enough
 time to cause the target device to restart (this may depend on the phone or
 other device this circuit is to be used with). This time is defined by the 
 RESET_PRESS_DURATION constant.
@@ -57,9 +57,9 @@ Below are the pin mappings for this firmware:
                       |     \---/     |
     N/A         -   --|(GP5)     (AN0)|--   - N/A
                       |               |
-    N/A         -   --|(GP4)     (GP1)|--   - N/A
+    N/A         -   --|(GP4)     (GP1)|--   > PWR_BTN
                       |               |
-    PWR_BTN     <   --|(GP3)     (GP2)|--   < WDT_RESET
+    N/A         -   --|(GP3)     (GP2)|--   < WDT_RESET
                       +---------------+
 ```
 
