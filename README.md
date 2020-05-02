@@ -63,6 +63,15 @@ Below are the pin mappings for this firmware:
                       +---------------+
 ```
 
+## Application notes
+
+The example below is applicable for a target device which can be restarted via 
+the momentary press of a button. It is assumed that this is an active low
+input, as when the microcontroller GP1 pin is set high, the transistor will 
+cause the button input to be pulled down:
+
+![alt text](doc/schematic.png "Schematic diagram")
+
 ## Potential improvements
 
  * Define a separate timer, in order to wait longer for devices that take a long
